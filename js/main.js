@@ -110,8 +110,11 @@ window.initMap = () => {
     center: loc,
     scrollwheel: false
   });
-
-  document.getElementById('map').tabIndex = 999;
+  let $map = $('#map')
+  //document.getElementById('map').tabIndex = 999;
+  let listener = self.map.addListener('tilesloaded', () =>
+  $map.find('div[tabindex]').attr('tabindex', 999));
+  //google.maps.event.removeListener(listener)
 
   updateRestaurants();
 }
