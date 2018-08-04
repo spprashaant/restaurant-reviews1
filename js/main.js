@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   initMap(); // added 
   fetchNeighborhoods();
   fetchCuisines();
+  setTabIndex();
   registerServiceWorker();
 });
 
@@ -110,15 +111,33 @@ window.initMap = () => {
     center: loc,
     scrollwheel: false
   });
-  let $map = $('#map')
-  //document.getElementById('map').tabIndex = 999;
-  let listener = self.map.addListener('tilesloaded', () =>
-  $map.find('div[tabindex]').attr('tabindex', 999));
-  //google.maps.event.removeListener(listener)
+  
 
   updateRestaurants();
+
+  
 }
 
+setTabIndex = () => {
+  //document.getElementById('map').tabIndex = 999;
+  let listener = self.map.addListener('tilesloaded', function() {
+    [].slice.apply(document.getElementById('map').getElementsByTagName('button')).forEach(function(item) {
+        item.setAttribute('tabindex','-1');
+      });
+
+    [].slice.apply(document.getElementById('map').getElementsByTagName('a')).forEach(function(item) {
+        item.setAttribute('tabindex','-1');
+      });
+    [].slice.apply(document.getElementById('map').getElementsByTagName('div[role="button"]')).forEach(function(item) {
+        item.setAttribute('tabindex','-1');
+      });
+    let $map = $('#map');
+    $map.find('div[tabindex]').attr('tabindex', '-1');
+    //$map.find('a').attr('tabindex', '-1')
+    $('#neighborhoods-select').focus();
+  });
+  //google.maps.event.removeListener(listener)
+}
 /**
  * Update page and map for current restaurants.
  */
@@ -179,6 +198,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = restaurant.name;
   li.append(image);
 
   const name = document.createElement('h1');
