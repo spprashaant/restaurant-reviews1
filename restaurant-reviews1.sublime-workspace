@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"col",
-				"column-reverse\tflex-direction"
+				"al",
+				"align-items\tproperty"
 			],
 			[
 				"flex",
-				"flex-basis\tproperty"
+				"flex-direction\tproperty"
+			],
+			[
+				"col",
+				"column\tflex-direction"
 			],
 			[
 				"s",
@@ -32,10 +36,10 @@
 	"buffers":
 	[
 		{
-			"file": "js/main.js",
+			"file": "restaurant.html",
 			"settings":
 			{
-				"buffer_size": 5793,
+				"buffer_size": 2181,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -44,7 +48,7 @@
 			"file": "js/restaurant_info.js",
 			"settings":
 			{
-				"buffer_size": 5337,
+				"buffer_size": 5432,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -53,16 +57,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1950,
+				"buffer_size": 2134,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "restaurant.html",
+			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 2367,
+				"buffer_size": 6865,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -71,7 +75,7 @@
 			"file": "css/styles.css",
 			"settings":
 			{
-				"buffer_size": 5445,
+				"buffer_size": 5690,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -141,11 +145,15 @@
 	],
 	"file_history":
 	[
-		"/C/Data/Dev/FrontEnd/restaurant-reviews1/README.md",
-		"/C/Data/Dev/FrontEnd/restaurant-reviews1/js/sw.js",
-		"/C/Data/Dev/FrontEnd/restaurant-reviews1/css/responsive.css",
-		"/C/Data/Dev/FrontEnd/restaurant-reviews1/css/styles.css",
+		"/C/Data/Dev/FrontEnd/restaurant-reviews1/js/main.js",
+		"/C/Data/Dev/FrontEnd/restaurant-reviews1/data/restaurants.json",
+		"/C/Data/Dev/FrontEnd/restaurant-reviews1/js/restaurant_info.js",
+		"/C/Data/Dev/FrontEnd/restaurant-reviews1/js/dbhelper.js",
 		"/C/Data/Dev/FrontEnd/restaurant-reviews1/index.html",
+		"/C/Data/Dev/FrontEnd/restaurant-reviews1/js/sw.js",
+		"/C/Data/Dev/FrontEnd/restaurant-reviews1/css/styles.css",
+		"/C/Data/Dev/FrontEnd/restaurant-reviews1/README.md",
+		"/C/Data/Dev/FrontEnd/restaurant-reviews1/css/responsive.css",
 		"/C/Data/Dev/FrontEnd/FeedReader/js/app.js",
 		"/C/Data/Dev/FrontEnd/FeedReader/jasmine/spec/feedreader.js",
 		"/C/Users/PrashanthPadebettu/Git/Source/jquery-3.3.1.js",
@@ -175,6 +183,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"restaurant-img",
+			"restaurants",
+			"\n  ",
+			"inside",
+			"header",
+			"inside",
 			"#map",
 			"map-container",
 			"inside",
@@ -198,43 +212,40 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/main.js",
+					"file": "restaurant.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5793,
+						"buffer_size": 2181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1898,
-								1901
+								1027,
+								1041
 							]
 						],
 						"settings":
 						{
-							"SL.22.region_keys":
+							"SL.16.region_keys":
 							[
 							],
-							"SL.76.region_keys":
-							[
-							],
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 969.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -243,20 +254,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5337,
+						"buffer_size": 5432,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2714,
+								2714
 							]
 						],
 						"settings":
 						{
-							"SL.102.region_keys":
+							"SL.20.region_keys":
 							[
 							],
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
@@ -264,10 +275,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1425.33333333,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -276,58 +287,64 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1950,
+						"buffer_size": 2134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								691,
-								691
+								1304,
+								1320
 							]
 						],
 						"settings":
 						{
+							"SL.18.region_keys":
+							[
+							],
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 570.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "restaurant.html",
+					"file": "js/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2367,
+						"buffer_size": 6865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								999,
-								999
+								5349,
+								5363
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"SL.19.region_keys":
+							[
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 324.0,
+						"translation.y": 4389.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -336,25 +353,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5445,
+						"buffer_size": 5690,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2698,
-								2698
+								3279,
+								3279
 							]
 						],
 						"settings":
 						{
+							"SL.25.region_keys":
+							[
+							],
 							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2402.0,
+						"translation.y": 2938.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -365,7 +385,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -406,7 +426,7 @@
 	"project": "restaurant-reviews1.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
